@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/20bc52809b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>LookUp-Dictionary</title>
+  </head>
+  <body>
+    <header class="flex justify-center items-center px-14 py-4 bg-blue-300">
+      <div>
+        <h1 class="text-4xl font-serif">📕 LookUp</h1>
+      </div>
+    </header>
+    <div id="main-wrapper" data-page="home">
+      <div>
+        <input
+          id="search"
+          class="block text-xl border-2 border-blue-200 m-auto w-1/2 h-10 px-6 py-6 mt-8 focus:outline-none focus:ring-1 focus:ring-blue-400 focus:border-blue-400 focus:shadow-md focus:shadow-blue-600 focus:bg-slate-300 focus:placeholder:text-black transition-colors"
+          type="text"
+          placeholder="🔍 Search English..."
+          autofocus
+        />
+      </div>
+
+      <ul id="word-list" class="w-1/2 m-auto mb-8 bg-slate-300"></ul>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
